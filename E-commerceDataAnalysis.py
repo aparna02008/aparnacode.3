@@ -13,9 +13,9 @@ d_total=data.sum(axis=1)
 d_index=np.argmax(d_total)
 day_max=day[d_index]
 print("Day with the highest overall sales:",day_max)
-d_avg=data.mean(axis=0)
+d_avg=data.mean(axis=1)
 print("Average sales per day:",d_avg)
-p_avg=data.mean(axis=1)
+p_avg=data.mean(axis=0)
 print("Average sales per product:",p_avg)
 sum_total=data.sum()
 percentage=(data/sum_total)*100
