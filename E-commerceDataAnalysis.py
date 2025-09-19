@@ -9,7 +9,7 @@ print("Total weekly sales per product:",total)
 max_index=np.argmax(total)
 p_max=product[max_index]
 print("Best-selling product of the week",p_max)
-d_total=data.sum(axis=1)
+d_total=data.sum(axis=1) 
 d_index=np.argmax(d_total)
 day_max=day[d_index]
 print("Day with the highest overall sales:",day_max)
